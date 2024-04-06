@@ -34,7 +34,7 @@ async def send_welcome(message: types.Message):
     name = ''
     if message.from_user.username:
         name = message.from_user.username
-    await message.answer(f"Привет {name}! Я Эхо бот!")
+    await message.reply(f"Привет {name}! Я Эхо бот!")
 
 # update data in class instance Dispatcher(dp)
 async def myupdate(upd):
