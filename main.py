@@ -44,7 +44,6 @@ async def myupdate(upd):
 # catch webhooks from telegram
 @app.route(f'/{secret_val}', methods=['POST'])
 def hello_world():
-    global dp
     if request.method == "POST":
         request_data = request.get_json()
         tasks = [loop.create_task(myupdate(request_data))]
