@@ -18,6 +18,7 @@ app = Flask(__name__)
 bot = Bot(token=token, proxy="http://proxy.server:3128")
 Bot.set_current(bot)
 dp = Dispatcher(bot)
+Dispatcher.set_current(dp) 
 
 
 # connect webhook
